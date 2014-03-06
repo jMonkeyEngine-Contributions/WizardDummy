@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: myplugin
+OpenIDE-Module-Implementation-Version: 0
+OpenIDE-Module-Localizing-Bundle: myplugin/Bundle.properties
+

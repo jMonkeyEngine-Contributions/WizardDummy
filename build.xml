@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="myplugin" default="netbeans" basedir=".">
+
+    <description>Builds, tests, and runs the project me.jayfella.plugin.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    <target name="update wizard sources" description="zip the source to the wizard project">
+
+        <property name="zipdestination" location="../../JMonkeyPluginWizard/src/me/jayfella/pluginwizard/"/>
+
+        <zip basedir="../JMonkeyPluginTemplate" destfile="${zipdestination}/PluginWizardProject.zip">
+            <exclude name="**/build/"/>
+            <exclude name="**/dist/"/>
+            <exclude name="**/nbproject/private/"/>
+        </zip>
+
+    </target>
+
+</project>
+
+
